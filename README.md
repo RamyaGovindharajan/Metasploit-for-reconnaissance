@@ -24,13 +24,18 @@ Open terminal and try execute some kali linux commands
 
 Find out the ip address of the attackers system
 ## OUTPUT:
+<img width="1159" height="413" alt="Screenshot 2026-02-06 132959" src="https://github.com/user-attachments/assets/c6b60c33-8c43-4f9f-832d-70d402748103" />
 
 
 Invoke msfconsole:
 ## OUTPUT:
+<img width="921" height="695" alt="Screenshot 2026-02-06 133016" src="https://github.com/user-attachments/assets/5caa80e0-643a-4716-a09b-acb4f0707e43" />
 
 
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
+**OUTPUT**
+
+<img width="802" height="734" alt="Screenshot 2026-02-06 133032" src="https://github.com/user-attachments/assets/7964b964-b7ae-4d89-9239-afe4608d0131" />
 
 
 
@@ -40,12 +45,18 @@ Following command is executed for scanning the systems on our local area network
 msf >  nmap -sT 192.168.1810/24 -p1-1000  (Replace with appropriate IP Address)
 ## OUTPUT:
 
+<img width="896" height="404" alt="Screenshot 2026-02-06 133154" src="https://github.com/user-attachments/assets/5b1f239c-46d9-4145-a2da-ae8dbea8f3d4" />
+
+
 step4:
 use the db-nmap command to scan and save the results into Metasploit's postgresql attached database. In that way, you can use those results in the exploitation stage later.
 
 scan the targets with the command db_nmap as follows.
 msf > db_nmap 192.168.181.0/24
 ## OUTPUT:
+
+<img width="641" height="390" alt="Screenshot 2026-02-06 133530" src="https://github.com/user-attachments/assets/8001f49e-781e-45a0-9fa0-d155288ceaea" />
+
 
 
 
@@ -54,12 +65,14 @@ cd /usr/share /metasploit-framework/modules/auxiliary
 kali > ls -l
 ## OUTPUT:
 
+<img width="670" height="507" alt="Screenshot 2026-02-06 134246" src="https://github.com/user-attachments/assets/b8ca01ed-dcab-4c1d-a907-11379cb51475" />
 
 
 Search is a powerful command in Metasploit that you can use to find what you want to locate. 
 msf >search name:Microsoft type:exploit
 ## OUTPUT:
 
+<img width="1698" height="821" alt="Screenshot 2026-02-06 134456" src="https://github.com/user-attachments/assets/eb8f2ffd-8d0b-44eb-92bd-479a625b861e" />
 
 
 The info command provides information regarding a module or platform,
@@ -69,6 +82,7 @@ systemctl start postgresql
 msfdb init
 ## OUTPUT:
 
+<img width="731" height="896" alt="Screenshot 2026-02-06 134629" src="https://github.com/user-attachments/assets/363d49e2-217e-4730-baae-5cba45426a38" />
 
 
 
@@ -83,23 +97,28 @@ search type:auxiliary mysql
 ## OUTPUT:
 
 
+ <img width="746" height="197" alt="Screenshot 2026-02-06 140125" src="https://github.com/user-attachments/assets/7f74db85-beae-448e-8347-7514a761d3c4" />
+
 use the auxiliary/scanner/mysql/mysql_version module by typing the module name or associated number to scan MySQL version details.
 use 11
 Or:
 use auxiliary/scanner/mysql/mysql_version
 ## OUTPUT:
 
+<img width="1640" height="698" alt="Screenshot 2026-02-06 140226" src="https://github.com/user-attachments/assets/2df8f343-b722-45a3-8921-1427cf5a0e13" />
 
 
 
 Use the set rhosts command to set the parameter and run the module, as follows:
 ## OUTPUT:
 
+<img width="580" height="110" alt="Screenshot 2026-02-06 140457" src="https://github.com/user-attachments/assets/82e79d3c-b5c9-4641-b7b0-07e1fc8bb66b" />
 
 
 After scanning, you can also brute force MySQL root account via Metasploit's auxiliary(scanner/mysql/mysql_login) module.
 ## OUTPUT:
 
+<img width="744" height="487" alt="Screenshot 2026-02-06 140342" src="https://github.com/user-attachments/assets/7ac6dc70-e4e2-4e66-8542-148a9afdd477" />
 
 
 
@@ -110,6 +129,12 @@ set RHOSTS <metasploitable-ip-address>
 Set BLANK_PASSWORDS to true in case there is no password set for the root account.
 set BLANK_PASSWORDS true
 ## OUTPUT:
+
+<img width="796" height="165" alt="image" src="https://github.com/user-attachments/assets/b6df67b3-1261-425f-bc42-f35ec78d2705" />
+
+
+
+![WhatsApp Image 2026-02-06 at 2 16 48 PM](https://github.com/user-attachments/assets/5c63f38e-e63a-469f-ab4b-3bba9b8fd18e)
 
 
 
